@@ -1,0 +1,58 @@
+
+.redirbutt {
+    background-color: white;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 70%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 6%;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    height: auto;
+}
+
+.redirbutt:not(:disabled):hover,
+.redirbutt:not(:disabled):focus {
+    outline: 0;
+    background: #f4e603;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.redirbutt:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+}
+.Navbarbox {
+    height: 100%; 
+    width: 0px;
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+
+.hoverindic {
+    line-height: 40vi;
+    opacity: 0.1;
+    color: black;
+    user-select: none;
+}
+.hoverbox {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+}

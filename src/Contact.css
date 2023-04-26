@@ -1,0 +1,11 @@
+.Contactbox {
+    outline-style: solid;
+    height: auto;
+}
+
+.formitems {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-row-gap: 30px;
+}
+

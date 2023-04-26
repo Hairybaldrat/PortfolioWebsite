@@ -1,0 +1,2 @@
+C:\Users\nev19\Desktop\Assignment1\Assignment1\obj\Debug\assignment1.esproj.SuggestedBindingRedirects.cache
+C:\Users\nev19\Desktop\Assignment1\Assignment1\obj\Debug\assignment1.esproj.CoreCompileInputs.cache

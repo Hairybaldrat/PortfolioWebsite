@@ -1,0 +1,22 @@
+.Projectbox {
+    border-style: solid;
+    height: 500px;
+}
+
+.Projectbox > p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 30%;
+    position: absolute;
+}
+
+.Background {
+
+}
+
+.projbutt {
+    float: right;
+    font-size: 1vw;
+    bottom: 0;
+    margin: 4%;
+}
