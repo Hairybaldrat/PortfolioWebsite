@@ -20,8 +20,7 @@
     height: auto;
 }
 
-.redirbutt:not(:disabled):hover,
-.redirbutt:not(:disabled):focus {
+.redirbutt:not(:disabled):hover {
     outline: 0;
     background: #f4e603;
     box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
@@ -47,8 +46,8 @@
 }
 
 .hoverindic {
-    line-height: 40vi;
-    opacity: 0.1;
+    line-height: 5vi;
+    opacity: 0.10;
     color: black;
     user-select: none;
 }
@@ -56,4 +55,10 @@
     position: fixed;
     width: 10%;
     height: 100%;
+}
+
+.homeButt{
+    width: 20px;
+    height: 20px;
+    position: relative;
 }

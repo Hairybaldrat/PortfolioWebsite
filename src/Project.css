@@ -63,10 +63,37 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.8s ease;
 }
 
     .projbutt:hover {
         background-color: #000000;
         color: #ffffff;
     }
+
+        .projbutt:hover > .buttlink {
+            color: white;
+            transition: color 0.8s ease;
+        }
+
+    .buttlink{
+        color: black;
+    }
+
+        .buttlink:hover {
+            color: white;
+            transition: color 0.8s ease;
+        }
+
+    .buttlink:visited {
+        text-decoration: none;
+    }
+
+    .buttlink:active {
+        text-decoration: none;
+    }
+
+    .buttlink:link {
+        text-decoration: none;
+    }
+

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom"
 import './Nav.css'
 
 export default function Navbar() {
@@ -35,7 +36,10 @@ export default function Navbar() {
     }
     return (
         <div className="Container">
-        <div className="Navbarbox">
+            <div className="Navbarbox">
+                <Link to="/">
+                    <img className="homeButt" src="House.png" alt="Homebutton"/>
+                </Link>
         {sections.length > 0 ?
             sections.map((section, index) =>
             {
@@ -44,7 +48,7 @@ export default function Navbar() {
                     </input>
                 </div>)
             })
-            : console.log("Error")
+            : console.log("No nav elements.")
         }
             </div>
             <div className="hoverbox">

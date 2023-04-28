@@ -7,7 +7,7 @@ import "./CSS/Home.css"
 function Home() {
     return (
         <div>
-                  <Navbar />
+            <Navbar />
           <div className="Content">
               <Profile />
               <Projects />
