@@ -44,7 +44,7 @@ export default function Navbar() {
                     </input>
                 </div>)
             })
-            : null
+            : console.log("Error")
         }
             </div>
             <div className="hoverbox">

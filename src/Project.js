@@ -1,6 +1,7 @@
 import "./Project.css"
 import Projects from "./Projects.json"
 import React from "react"
+import { Link, Route, Routes } from "react-router-dom"
 
 export default function Project() {
     return (<div>
@@ -14,8 +15,9 @@ export default function Project() {
                         </div>
                         <div className="Projectbox">
                             <h1> {project.Name} </h1>
-                            <p>{project.Text }</p>
-                            <input type="button" className="projbutt" value="View more" onClick={() => { console.log("chungus") }}></input>
+                            <p>{project.Text}</p>
+                            <Link to="/Attendance"> BRUH</Link>
+                            <input type="button" className="projbutt" value="View more" onClick={() => { <Link to="/Attendance"></Link> }}></input>
                     </div>
                 </div>
                 )

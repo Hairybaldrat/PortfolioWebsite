@@ -3,8 +3,8 @@
     "id": 1,
     "Name": "Attendance application",
     "Backgroundimage": "https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png",
-    "Url": "",
-    "Text": "A full stack cloud based application that allows students to log in with qr codes. Has multiple parts, including a mobile layer, web layer, and a database layer. This application was designed for a software development course. \n Chungus"
+    "Url": "Attendance",
+    "Text": "A full stack cloud based application that allows students to log in with qr codes. Has multiple parts, including a mobile layer, web layer, and a database layer. This application was designed for a software development course. \n "
   },
   {
     "id": 2,

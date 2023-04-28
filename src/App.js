@@ -1,19 +1,18 @@
 import './App.css';
-import Navbar from './Nav.js';
-import Profile from './Profile.js'
-import Contact from './Contact.js'
-import Projects from './Project.js'
+import { Route , Routes, BrowserRouter} from "react-router-dom"
+import Home from './pages/Home.js'
+import Attendance from './pages/Attendance.js'
 
 function App() {
-  return (
+    return (
+      <BrowserRouter>
       <div className="App">
-          <Navbar />
-          <div className="Content">
-              <Profile />
-              <Projects />
-              <Contact />
-          </div>
-    </div>
+                <Routes >
+                    <Route path="/Attendance" element={<Attendance />} />
+                    <Route path="/" element={<Home /> } />
+          </Routes>
+            </div>
+        </BrowserRouter>
   );
 }
 
