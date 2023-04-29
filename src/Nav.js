@@ -34,11 +34,15 @@ export default function Navbar() {
         section.scrollIntoView();
 
     }
+
     return (
         <div className="Container">
             <div className="Navbarbox">
                 <Link to="/">
-                    <img className="homeButt" src="House.png" alt="Homebutton"/>
+                    <div className="homeElements">
+                        <img className="homeButt" src="House.png" alt="Homebutton" />
+                        <p className="homeText">Home</p>
+                    </div>
                 </Link>
         {sections.length > 0 ?
             sections.map((section, index) =>

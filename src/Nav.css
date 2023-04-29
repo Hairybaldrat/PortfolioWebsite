@@ -8,11 +8,11 @@
     padding: 10px 15px;
     text-align: center;
     transition: 200ms;
-    width: 70%;
+    width: 60%;
     box-sizing: border-box;
     border: 0;
-    font-size: 1.5vw;
-    font-size: 1.5vh;
+    font-size: 1.2vw;
+    font-size: 1.2vh;
     margin-bottom: 6%;
     user-select: none;
     -webkit-user-select: none;
@@ -57,8 +57,36 @@
     height: 100%;
 }
 
-.homeButt{
+.homeButt {
     width: 20px;
     height: 20px;
-    position: relative;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.homeText {
+    color: white;
+    display: inline-block;
+}
+
+    .homeText:hover {
+        color: yellow;
+        transition: color 1.5s ease;
+    }
+
+    .homeText:visited {
+        text-decoration: none;
+    }
+
+    .homeText:active {
+        text-decoration: none;
+    }
+
+    .homeText:link {
+        text-decoration: none;
+    }
+
+.homeElements {
+    padding: 1rem 1rem;
+    text-align: center;
 }

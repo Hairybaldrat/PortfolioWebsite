@@ -1,5 +1,5 @@
-import Navbar from "../Nav.js"
-import Introduction from "../Introduction.js"
+import Navbar from "../Nav.js";
+import Introduction from "../Introduction.js";
 
 function Attendance() {
     return (

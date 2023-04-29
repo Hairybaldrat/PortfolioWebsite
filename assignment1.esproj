@@ -13,5 +13,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\pages\CSS\" />
+    <Folder Include="src\pages\JSON\" />
   </ItemGroup>
 </Project>
