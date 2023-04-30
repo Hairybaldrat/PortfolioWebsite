@@ -11,7 +11,7 @@ export default function Project() {
                     return (< div className="Section" id={"Project " + project.id} key={project.id}>
                         <div className="Background">
                             <div className="BackgroundOverlay"></div>
-                                <div className="BackgroundImage" style={{ backgroundImage: `url(${project.Images[0]})` }}></div>
+                                <div className="BackgroundImage" style={{ backgroundImage: `url(${project.Images})` }}></div>
                         </div>
                         <div className="Projectbox">
                             <h1> {project.Name} </h1>
