@@ -1,0 +1,14 @@
+.innertext{
+    font-size: 0.6vi;
+    margin-left: 5%;
+}
+
+.skillColumn{
+    display: inline-grid;
+    text-align: left;
+}
+
+.skillColumn > h2 {
+    font-size: 0.9vi;
+    margin-top: 5%;
+}
