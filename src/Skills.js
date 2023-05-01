@@ -8,51 +8,46 @@ export default function Skills() {
         <Container className="Skillsbox">
             <h2 className="pb-2 border-bottom">Skills</h2>
             <Row>
-                <Col className="skillColumn" >
+                <Col className="skillColumn" sm>
                     <h2>C-Sharp</h2>
-                    <div>
                         <p className="innertext">I have spent three years learning c-sharp.
                             I have used it in backend web development (asp.net),
                             games development (unity),
                             windows forms development.</p>
-                </div>
                 </Col>
-                <Col className="skillColumn" >
+                <Col className="skillColumn" sm>
                     <h2>Javascript</h2>
-                    <p className="innertext">I have spent three years learning c-sharp.
-                        I have used it in backend web development (asp.net),
-                        games development (unity),
-                        windows forms development.</p>
+                        <p className="innertext">I have experience using Javascript to create web based applications.
+                            This experience is primarly within the frontend framework of React.</p>
                 </Col>
-                <Col className="skillColumn" >
-                    <h2>Cloud architecture</h2>
-                    <p className="innertext">I have spent three years learning c-sharp.
+                <Col className="skillColumn"  sm>
+                    <h2>Cloud</h2>
+                    <p className="innertext" >I have spent three years learning c-sharp.
                         I have used it in backend web development (asp.net),
                         games development (unity),
                         windows forms development.</p>
                 </Col>
             </Row>
             <Row>
-                <Col className="skillColumn" >
+                <Col className="skillColumn" sm>
                     <h2>Full-Stack web development</h2>
                     <p className="innertext">I have spent three years learning c-sharp.
                         I have used it in backend web development (asp.net),
                         games development (unity),
                         windows forms development.</p>
                 </Col>
-                <Col className="skillColumn" >
+                <Col className="skillColumn" sm>
                     <h2>Games Devlopment</h2>
                     <p className="innertext">I have spent three years learning c-sharp.
                         I have used it in backend web development (asp.net),
                         games development (unity),
                         windows forms development.</p>
                 </Col>
-                <Col className="skillColumn" >
-                    <h2>Bruh</h2>
-                    <p className="innertext">I have spent three years learning c-sharp.
-                        I have used it in backend web development (asp.net),
-                        games development (unity),
-                        windows forms development.</p>
+                <Col className="skillColumn" sm>
+                    <h2>Databases</h2>
+                    <p className="innertext">I have worked on multiple projects that have implemented databases.
+                    I have a proficient understanding of SQL and Jade 
+                    </p>
                 </Col>
             </Row>
         </Container>

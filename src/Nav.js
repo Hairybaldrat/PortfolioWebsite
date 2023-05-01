@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"
 import './Nav.css'
+import Button from "react-bootstrap/Button"
 
 export default function Navbar() {
   const [sections, setSections] = useState([]);
@@ -12,14 +13,22 @@ export default function Navbar() {
         setSections(sectionArray);
         const navBar = document.getElementsByClassName("Navbarbox")[0];
         document.addEventListener('mousemove', mouseMoveHandler);
-        const windowX = window.screen.availWidth * 0.10;
-        const windowX2 = window.screen.availWidth * 0.15;
+        var windowX;
+        var windowX2;
+        if (window.screen.availWidth < 800) {
+            windowX = window.screen.availWidth * 0.5;
+            windowX2 = window.screen.availWidth * 0.65;
+        }
+        else {
+            windowX = window.screen.availWidth * 0.10;
+            windowX2 = window.screen.availWidth * 0.15;
+        }
         function mouseMoveHandler(e) {
             e = e || window.event;
             const mouseX = e.pageX;
             if (mouseX <= windowX) {
                 if (window.screen.availWidth < 800) {
-                    navBar.style.width = "30%";
+                    navBar.style.width = "50%";
                 }
                 else {
                     navBar.style.width = "15%";
@@ -50,8 +59,9 @@ export default function Navbar() {
             sections.map((section, index) =>
             {
                 return (<div key={index}>
-                    <input type="button" className="redirbutt" onClick={() => clickbutton(section)} value={section.id != null ? section.id : "No tag"}>
-                    </input>
+                    <Button className="redirbutt" variant="light" onClick={() => clickbutton(section)} >
+                        <div className="butttext">{section.id != null ? section.id : "No tag"}</div>
+                    </Button>
                 </div>)
             })
             : console.log("No nav elements.")

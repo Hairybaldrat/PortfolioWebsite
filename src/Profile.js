@@ -12,11 +12,11 @@ export default function Profile() {
           <Container fluid>
             <Row >
               <Col xs={4} md={2 }>
-                <div className="Profilepicture">
-                  <Image src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" alt="Rowan Olive" fluid />
+                            <div className="Profilepicture" >
+                                <Image src="Portfolio.png" alt="Rowan Olive" className="picture" fluid />
                 </div>
               </Col>
-                <Col>
+                <Col sm>
                 <h1 className="Title" id="Title">About me</h1>
                 <p className="profiletext">My name is Rowan and I am a junior software developer.
                   I mainly have experience in C#, Javascript (React).
