@@ -5,6 +5,8 @@ import Attendance from './pages/Attendance.js'
 import Mugan from './pages/Mugan.js'
 
 function App() {
+
+
     return (
       <BrowserRouter>
             <div className="App">

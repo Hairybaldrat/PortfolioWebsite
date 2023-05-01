@@ -11,12 +11,12 @@ export default function Profile() {
         <div className="Profilebox">
           <Container fluid>
             <Row >
-              <Col xs={4} md={2 }>
+                        <Col xs={2}>
                             <div className="Profilepicture" >
                                 <Image src="Portfolio.png" alt="Rowan Olive" className="picture" fluid />
                 </div>
               </Col>
-                <Col sm>
+                        <Col xxl={8 }>
                 <h1 className="Title" id="Title">About me</h1>
                 <p className="profiletext">My name is Rowan and I am a junior software developer.
                   I mainly have experience in C#, Javascript (React).

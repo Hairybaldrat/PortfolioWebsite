@@ -7,8 +7,6 @@
     display: inline-grid;
     grid-template: 70%;
     position: center;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 p {
@@ -19,7 +17,9 @@ p {
 @media (min-width: 1440px) {
     .Content {
         font-size: 2vw;
-        font-size: 2vh
+        font-size: 2vh;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 /* If the screen size is smaller than 1200px, set the font-size to 80px */

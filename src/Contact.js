@@ -4,22 +4,60 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
+import React, { useState } from 'react';
 
 export default function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+            if (!name || !email || !message) {
+                console.log('Something is empty');
+                return;
+            }
+
+            var discordMessage = {
+                username: 'Portfolio bot',
+                content: 'New Message',
+                embeds: [
+                    {
+                        fields: [
+                            { name: 'Username', value: name },
+                            { name: 'Email', value: email },
+                            { name: 'Message', value: message},
+                        ],
+                    },
+                ],
+            };
+
+        fetch('https://discord.com/api/webhooks/1102550645761908866/GHK1i6Tur9M4DjPD1gazr1wIC8zVzN_HqOy0ROsp0YSKEE4HZ7GYfNyhvxZoR0WoWCb9',{
+                body: JSON.stringify(discordMessage),
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+    }
+
     return (<div className="Section" id="Contact">
-      <div className="Contactbox">
+        <div className="Contactbox">
+            <Form onSubmit={handleSubmit}>
         <Container fluid>
           <Row>
             <h1 className="contactTitle"> Contact me </h1>
           </Row>
-          <Row>
+                <Row>
             <Form.Group>
               <Form.Label htmlFor="inputName">Name :</Form.Label>
               <Form.Control
-                type="text"
-                id="inputName"
-                aria-describedby="nameHelp"
-                placeholder="Your Name"
+                            type="text"
+                            id="inputName"
+                            aria-describedby="nameHelp"
+                            placeholder="Your Name"
+                            onChange={(e) => setName(e.target.value)}
               />
               <Form.Text id="nameHelp" muted>
                 Insert your name here.
@@ -34,6 +72,7 @@ export default function Contact() {
                 id="inputEmail"
                 aria-describedby="emailHelp"
                 placeholder="name@example.com"
+                onChange={(e) => setEmail(e.target.value)}
               />
               <Form.Text id="emailHelp" muted>
                 Insert your email here.
@@ -49,7 +88,8 @@ export default function Contact() {
                 aria-describedby="messageHelp"
                 as="textarea"
                 rows={4}
-                placeholder="Your Message"
+                            placeholder="Your Message"
+                            onChange={(e) => setMessage(e.target.value)}
               />
               <Form.Text id="messageHelp" muted>
                 Insert the message you want to send.
@@ -58,12 +98,13 @@ export default function Contact() {
           </Row>
           <Row>
             <Col></Col>
-            <Col xs={2} md={2} style={{display:"table", padding:"4%"} }>
-              <Button>Send
+                    <Col xs={2} md={2} style={{ display: "table", padding: "4%" }}>
+                        <Button type="submit">Send
               </Button>
             </Col>
           </Row>
-        </Container>
+                </Container>
+            </Form>
         </div>
     </div>);
 }

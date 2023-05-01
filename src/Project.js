@@ -6,7 +6,6 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card"
-import Container from "react-bootstrap/Container"
 
 export default function Project() {
     return (<div>
@@ -15,17 +14,24 @@ export default function Project() {
                 project => {
                     return (<div className="Section" id={"Project " + project.id} key={project.id}>
                         <Card bg="Dark">
-                            <Card.Img src={project.Images} alt="projectimg" style={{ height: '60vh'}} />
+                            <Card.Img className="projimg" src={project.Images} alt="projectimg"  />
                             <Card.ImgOverlay className="overlay">
-                            <Card.Body>
-                                    <Card.Title className="projTitle">
-                                {project.Name}
-                            </Card.Title>
-                                    <Card.Text className="projText">
-                                {project.Text}
-                            </Card.Text>
-
-                               <Button className="projbutt" variant="light"><Link to={project.Url} className="buttlink">View More</Link></Button>
+                                <Card.Body>
+                                    <Row>
+                                        <Card.Title className="projTitle">
+                                            {project.Name}
+                                        </Card.Title>
+                                    </Row>
+                                    <Row>
+                                        <Card.Text>
+                                            {project.Text}
+                                        </Card.Text>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <Button className="projbutt" variant="light"><Link to={project.Url} className="buttlink">View More</Link></Button>
+                                        </Col>
+                                    </Row>
                             </Card.Body>
                             </Card.ImgOverlay>
                             </Card>

@@ -1,16 +1,19 @@
 .innertext{
     font-size: 1.5vh;
-    margin-left: 5%;
 
 }
 
 .skillColumn{
-    display: inline-grid;
     text-align: left;
+    padding: 2%;
 }
 
 .skillColumn > h2 {
     font-size: 0.9vi;
-    margin-top: 5%;
     font-size: 2vh;
+}
+
+.skillsheader{
+    font-size: 4vh !important;
+    margin-bottom: 4%;
 }

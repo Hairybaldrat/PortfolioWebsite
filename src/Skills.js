@@ -6,7 +6,9 @@ import './Skills.css'
 export default function Skills() {
     return (<div className="Section" id="Skills">
         <Container className="Skillsbox">
-            <h2 className="pb-2 border-bottom">Skills</h2>
+            <div>
+                <h2 className="pb-2 border-bottom skillsheader">Skills</h2>
+            </div>
             <Row>
                 <Col className="skillColumn" sm>
                     <h2>C-Sharp</h2>
@@ -30,18 +32,17 @@ export default function Skills() {
             </Row>
             <Row>
                 <Col className="skillColumn" sm>
-                    <h2>Full-Stack web development</h2>
+                    <h2>Web development</h2>
                     <p className="innertext">I have spent three years learning c-sharp.
                         I have used it in backend web development (asp.net),
                         games development (unity),
                         windows forms development.</p>
                 </Col>
                 <Col className="skillColumn" sm>
-                    <h2>Games Devlopment</h2>
-                    <p className="innertext">I have spent three years learning c-sharp.
-                        I have used it in backend web development (asp.net),
-                        games development (unity),
-                        windows forms development.</p>
+                    <h2>Games Development</h2>
+                    <p className="innertext">I have made multiple unity game projects over the course of my studies.
+                    Game development and creation is a hobby that has allowed me to not only work on my coding knowledge but also over general skills.
+                    </p>
                 </Col>
                 <Col className="skillColumn" sm>
                     <h2>Databases</h2>
