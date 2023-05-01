@@ -3,8 +3,9 @@ import { Link } from "react-router-dom"
 import './Nav.css'
 
 export default function Navbar() {
-    const [sections, setSections] = useState([]);
+  const [sections, setSections] = useState([]);
 
+    //Will currently freak out if resolution is changed, mid browsing.
     useEffect(() => {
         const sectionElements = document.getElementsByClassName('Content')[0].getElementsByClassName('Section');
         const sectionArray = Array.from(sectionElements);
@@ -33,7 +34,8 @@ export default function Navbar() {
     function clickbutton(section) {
         section.scrollIntoView();
 
-    }
+  }
+  console.log(sections)
 
     return (
         <div className="Container">

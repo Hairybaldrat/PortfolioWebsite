@@ -1,5 +1,5 @@
 .innertext{
-    font-size: 0.6vi;
+    font-size: 1.5vh;
     margin-left: 5%;
 }
 
@@ -11,4 +11,5 @@
 .skillColumn > h2 {
     font-size: 0.9vi;
     margin-top: 5%;
+    font-size: 2vh;
 }

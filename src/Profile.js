@@ -11,7 +11,7 @@ export default function Profile() {
         <div className="Profilebox">
           <Container fluid>
             <Row >
-              <Col xs={3} md={2 }>
+              <Col xs={4} md={2 }>
                 <div className="Profilepicture">
                   <Image src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" alt="Rowan Olive" fluid />
                 </div>
