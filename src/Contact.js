@@ -69,7 +69,7 @@ export default function Contact() {
             </Form.Group>
           </Row>
                     <Row>
-                        <Form.Group className="mc-4">
+                        <Form.Group className="">
               <Form.Label htmlFor="inputEmail">Email :</Form.Label>
               <Form.Control
                 type="text"
