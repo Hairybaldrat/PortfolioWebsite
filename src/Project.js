@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card"
 
 export default function Project() {
-    return (<div>
+    return (<div className="Project">
         {
             Projects.map(
                 project => {
@@ -22,10 +22,12 @@ export default function Project() {
                                             {project.Name}
                                         </Card.Title>
                                     </Row>
-                                    <Row>
-                                        <Card.Text>
-                                            {project.Text}
-                                        </Card.Text>
+                                    <Row className="justify-content-md-center">
+                                        <Col xs lg="10">
+                                            <Card.Text className="projText" >
+                                                {project.Text}
+                                            </Card.Text>
+                                        </Col>
                                     </Row>
                                     <Row>
                                         <Col>

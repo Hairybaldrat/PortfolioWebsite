@@ -3,14 +3,46 @@
 
 .projTitle{
     color: white;
-    font-size: 4vh !important;
     margin-bottom: 4% !important;
 }
 
 .projText{
     color: white;
     text-align: left;
-    font-size: 3vh;
+
+}
+
+@media (max-width: 1023px) {
+    .projText {
+        font-size: 1.4vh;
+    }
+    .projTitle {
+        font-size: 2.4vh !important;
+    }
+    .projimg {
+        height: 50vi;
+    }
+    .buttlink{
+        font-size: 1.2vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projText {
+        font-size: 2.3vh;
+    }
+    .projTitle {
+        font-size: 4vh !important;
+    }
+    .projbutt{
+
+    }
+    .projimg {
+        height: 25vi;
+    }
+    .buttlink {
+        font-size: 2vh;
+    }
 }
 
 .projbutt {
@@ -35,7 +67,6 @@
 
     .buttlink{
         color: black;
-        font-size: 2vh;
     }
 
 
@@ -53,11 +84,8 @@
     }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
 }
 
-.projimg{
-    height: 30vi;
-}
 

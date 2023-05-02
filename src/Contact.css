@@ -1,5 +1,4 @@
 .Contactbox {
-    outline-style: solid;
     height: auto;
 }
 
@@ -9,4 +8,13 @@
     grid-row-gap: 30px;
 }
 
+@media (max-width: 1439px) {
+
+}
+
+@media (min-width: 1439px) {
+    .Contactbox {
+        outline-style: solid;
+    }
+}
 

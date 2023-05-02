@@ -24,19 +24,15 @@ export default function Skills() {
                 </Col>
                 <Col className="skillColumn"  sm>
                     <h2>Cloud</h2>
-                    <p className="innertext" >I have spent three years learning c-sharp.
-                        I have used it in backend web development (asp.net),
-                        games development (unity),
-                        windows forms development.</p>
+                    <p className="innertext" >I have deployed multiple applications to the cloud and have a fair understanding of the systems it uses.
+                    I am mainly familiar with Azure but understand terraform and I am interested in devloping on the other cloud platforms as well.
+                    </p>
                 </Col>
             </Row>
             <Row>
                 <Col className="skillColumn" sm>
                     <h2>Web development</h2>
-                    <p className="innertext">I have spent three years learning c-sharp.
-                        I have used it in backend web development (asp.net),
-                        games development (unity),
-                        windows forms development.</p>
+                    <p className="innertext">I understand full stack web development. I primarily understand React JS with ASP.net backend.</p>
                 </Col>
                 <Col className="skillColumn" sm>
                     <h2>Games Development</h2>

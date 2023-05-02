@@ -32,14 +32,18 @@ export default function Contact() {
                     },
                 ],
             };
-
-        fetch('https://discord.com/api/webhooks/1102550645761908866/GHK1i6Tur9M4DjPD1gazr1wIC8zVzN_HqOy0ROsp0YSKEE4HZ7GYfNyhvxZoR0WoWCb9',{
+        try {
+            fetch('', {
                 body: JSON.stringify(discordMessage),
                 method: 'post',
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
+        }
+        catch(e) {
+            alert(e);
+        }
     }
 
     return (<div className="Section" id="Contact">
@@ -47,11 +51,11 @@ export default function Contact() {
             <Form onSubmit={handleSubmit}>
         <Container fluid>
           <Row>
-            <h1 className="contactTitle"> Contact me </h1>
+            <h1 className="contactTitle border-bottom pb-4"> Contact me </h1>
           </Row>
                 <Row>
-            <Form.Group>
-              <Form.Label htmlFor="inputName">Name :</Form.Label>
+                        <Form.Group>
+                            <Form.Label htmlFor="inputName" className="mt-4">Name :</Form.Label>
               <Form.Control
                             type="text"
                             id="inputName"
