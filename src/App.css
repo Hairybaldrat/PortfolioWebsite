@@ -1,12 +1,13 @@
 .App {
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .Content {
     display: inline-grid;
     grid-template: 70%;
     position: center;
+    background-color: white;
 }
 
 p {

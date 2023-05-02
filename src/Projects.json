@@ -4,13 +4,23 @@
     "Name": "Attendance application",
     "Images": "https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" ,
     "Url": "Attendance",
-    "Text": "A full stack cloud based application that allows students to log in with qr codes. Has multiple parts, including a mobile layer, web layer, and a database layer. This application was designed for a software development course. \n "
+    "Text": "A full stack cloud based application that allows students to log in with qr codes. Has multiple parts, including a mobile layer, web layer, and a database layer. This application was designed for a software development course. \n ",
+    "Title": "Attendance Application"
   },
   {
     "id": 2,
     "Name": "Mugan Trial",
     "Images": "mugan.png",
     "Url": "Mugan-Trial",
-    "Text": "Mugan Trial is a game about surviving procedually generated dungeons to try and fight your way to the surface. This game was made for a second year game development course."
+    "Text": "Mugan Trial is a game about surviving procedually generated dungeons to try and fight your way to the surface. This game was made for a second year game development course.",
+    "Title": "Mugan Trial"
+  },
+  {
+    "id": 3,
+    "Name": "Monkeys",
+    "Images": "mugan.png",
+    "Url": "Monkey-Site",
+    "Text": "This is a website made for a first year web devleopment course.",
+    "Title": "Monkey Site"
   }
 ]

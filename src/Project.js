@@ -13,7 +13,7 @@ export default function Project() {
         {
             Projects.map(
                 project => {
-                    return (<div className="Section" id={"Project " + project.id} key={project.id}>
+                    return (<div className="Section" id={project.Title} key={project.id}>
                         <Container>
                         <Card bg="Dark">
                             <Card.Img className="projimg" src={project.Images} alt="projectimg"  />

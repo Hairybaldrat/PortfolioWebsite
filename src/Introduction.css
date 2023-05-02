@@ -1,4 +1,7 @@
 .Introbox{
-    border-style: solid;
-    height: 500px;
+    height: auto;
 }
+
+    .Introbox > p {
+        text-align: left;
+    }

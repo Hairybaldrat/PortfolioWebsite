@@ -33,7 +33,7 @@ export default function Contact() {
                 ],
             };
         try {
-            fetch('', {
+            fetch(process.env.Discord_Hook, {
                 body: JSON.stringify(discordMessage),
                 method: 'post',
                 headers: {
@@ -68,8 +68,8 @@ export default function Contact() {
               </Form.Text>
             </Form.Group>
           </Row>
-          <Row>
-            <Form.Group>
+                    <Row>
+                        <Form.Group className="mc-4">
               <Form.Label htmlFor="inputEmail">Email :</Form.Label>
               <Form.Control
                 type="text"
@@ -91,7 +91,7 @@ export default function Contact() {
                 id="inputMessage"
                 aria-describedby="messageHelp"
                 as="textarea"
-                rows={4}
+                                rows={4}
                             placeholder="Your Message"
                             onChange={(e) => setMessage(e.target.value)}
               />

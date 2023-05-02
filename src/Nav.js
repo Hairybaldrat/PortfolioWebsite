@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"
 import './Nav.css'
 import Button from "react-bootstrap/Button"
+import Container from "react-bootstrap/Container"
 
 export default function Navbar() {
   const [sections, setSections] = useState([]);
@@ -16,7 +17,7 @@ export default function Navbar() {
         var windowX;
         var windowX2;
         if (window.screen.availWidth < 800) {
-            windowX = window.screen.availWidth * 0.5;
+            windowX = window.screen.availWidth * 0.1;
             windowX2 = window.screen.availWidth * 0.5;
         }
         else {
@@ -47,7 +48,7 @@ export default function Navbar() {
   console.log(sections)
 
     return (
-        <div className="Container">
+        <div>
             <div className="Navbarbox">
                 <Link to="/">
                     <div className="homeElements">
@@ -68,7 +69,9 @@ export default function Navbar() {
         }
             </div>
             <div className="hoverbox">
-                <h3 className="hoverindic">Hover me</h3>
+                <Button variant="dark" className="hoverbutt">
+                    <h2 className="hoverindic"> Explore</h2>
+                </Button>
             </div>
-        </div>            );
+        </div>);
 }
