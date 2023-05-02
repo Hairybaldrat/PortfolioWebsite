@@ -1,8 +1,18 @@
 {
-  "Attendance": [
-    {
-      "Introduction": "",
-      "Images": ["Chungus", "Chungus"]
-    }
-  ]
+  "Attendance": {
+    "Introduction": "Chunga",
+    "Body": "Chungus",
+    "Images": [ "Chungus", "Chungus" ]
+  },
+  "Mugan": {
+    "Introduction": "Mugan trial is a game based around a rogue-lite experience. The player has to traverse procedually generated rooms that vary between each level of the dungeon. As the player progresses they will become stronger allowing them to progress quicker and fight tougher enemies.",
+    "Body": "Chungus",
+    "Images": [ "mugan.png", "mugan.png", "mugan.png", "mugan.png" ]
+  },
+  "Judge": {
+
+  },
+  "Monkey": {
+
+  }
 }

@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button"
 export default function Navbar() {
   const [sections, setSections] = useState([]);
 
-    //Will currently freak out if resolution is changed, mid browsing.
+    //Will currently freak out if resolution is changed in debug mode, seems to be fine if browser changes size.
     useEffect(() => {
         const sectionElements = document.getElementsByClassName('Content')[0].getElementsByClassName('Section');
         const sectionArray = Array.from(sectionElements);
@@ -17,11 +17,11 @@ export default function Navbar() {
         var windowX2;
         if (window.screen.availWidth < 800) {
             windowX = window.screen.availWidth * 0.5;
-            windowX2 = window.screen.availWidth * 0.65;
+            windowX2 = window.screen.availWidth * 0.5;
         }
         else {
             windowX = window.screen.availWidth * 0.10;
-            windowX2 = window.screen.availWidth * 0.15;
+            windowX2 = window.screen.availWidth * 0.20;
         }
         function mouseMoveHandler(e) {
             e = e || window.event;

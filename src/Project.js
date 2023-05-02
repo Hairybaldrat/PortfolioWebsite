@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
 
 export default function Project() {
     return (<div className="Project">
@@ -13,6 +14,7 @@ export default function Project() {
             Projects.map(
                 project => {
                     return (<div className="Section" id={"Project " + project.id} key={project.id}>
+                        <Container>
                         <Card bg="Dark">
                             <Card.Img className="projimg" src={project.Images} alt="projectimg"  />
                             <Card.ImgOverlay className="overlay">
@@ -37,6 +39,7 @@ export default function Project() {
                             </Card.Body>
                             </Card.ImgOverlay>
                             </Card>
+                        </Container>
                     </div>
                 )
             })
