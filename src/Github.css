@@ -1,0 +1,30 @@
+.giticon{
+
+}
+.gittextbox > p{
+    color: black;
+    text-align: left;
+}
+.gittextbox > h2 {
+    color: black;
+}
+
+.gittextbox :link{
+    text-decoration: none;
+    color: black;
+}
+
+.gittextbox :visited {
+    text-decoration: none;
+    color: black;
+}
+
+.gittextbox :hover {
+    text-decoration: none;
+    color: black;
+}
+
+.gittextbox :active {
+    text-decoration: none;
+    color: black !important;
+}

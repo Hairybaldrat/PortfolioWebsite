@@ -2,43 +2,47 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"
 import './Nav.css'
 import Button from "react-bootstrap/Button"
-import Container from "react-bootstrap/Container"
 
 export default function Navbar() {
   const [sections, setSections] = useState([]);
 
     //Will currently freak out if resolution is changed in debug mode, seems to be fine if browser changes size.
     useEffect(() => {
-        const sectionElements = document.getElementsByClassName('Content')[0].getElementsByClassName('Section');
-        const sectionArray = Array.from(sectionElements);
-        setSections(sectionArray);
-        const navBar = document.getElementsByClassName("Navbarbox")[0];
-        document.addEventListener('mousemove', mouseMoveHandler);
-        var windowX;
-        var windowX2;
-        if (window.screen.availWidth < 800) {
-            windowX = window.screen.availWidth * 0.1;
-            windowX2 = window.screen.availWidth * 0.5;
-        }
-        else {
-            windowX = window.screen.availWidth * 0.10;
-            windowX2 = window.screen.availWidth * 0.20;
-        }
-        function mouseMoveHandler(e) {
-            e = e || window.event;
-            const mouseX = e.pageX;
-            if (mouseX <= windowX) {
-                if (window.screen.availWidth < 800) {
-                    navBar.style.width = "50%";
+        if (document.getElementsByClassName('Content')?.[0] != null) {
+            const sectionElements = document.getElementsByClassName('Content')[0].getElementsByClassName('Section');
+            const sectionArray = Array.from(sectionElements);
+            setSections(sectionArray);
+            const navBar = document.getElementsByClassName("Navbarbox")[0];
+            document.addEventListener('mousemove', mouseMoveHandler);
+            var windowX;
+            var windowX2;
+            if (window.screen.availWidth < 800) {
+                windowX = window.screen.availWidth * 0.1;
+                windowX2 = window.screen.availWidth * 0.5;
+            }
+            else {
+                windowX = window.screen.availWidth * 0.10;
+                windowX2 = window.screen.availWidth * 0.20;
+            }
+            function mouseMoveHandler(e) {
+                e = e || window.event;
+                const mouseX = e.pageX;
+                if (mouseX <= windowX) {
+                    if (window.screen.availWidth < 800) {
+                        navBar.style.width = "50%";
+                    }
+                    else {
+                        navBar.style.width = "15%";
+                    }
                 }
-                else {
-                    navBar.style.width = "15%";
+                else if (mouseX >= windowX2) {
+                    navBar.style.width = "0px";
                 }
             }
-            else if (mouseX >= windowX2) {
-                navBar.style.width = "0px";
-            }
+        } else {
+            console.log("No content element.")
         }
+
     }, []);
 
     function clickbutton(section) {

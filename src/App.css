@@ -6,6 +6,7 @@
 .Content {
     display: inline-grid;
     grid-template: 70%;
+    min-width: 70%;
     position: center;
     background-color: white;
 }
