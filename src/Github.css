@@ -1,9 +1,11 @@
 .giticon{
-
+    width: 100%;
+    height: 100%;
 }
 .gittextbox > p{
     color: black;
     text-align: left;
+    text-decoration: none;
 }
 .gittextbox > h2 {
     color: black;
@@ -27,4 +29,8 @@
 .gittextbox :active {
     text-decoration: none;
     color: black !important;
+}
+
+.gitbox{
+    text-align: left;
 }

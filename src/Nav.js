@@ -17,7 +17,7 @@ export default function Navbar() {
             var windowX;
             var windowX2;
             if (window.screen.availWidth < 800) {
-                windowX = window.screen.availWidth * 0.1;
+                windowX = window.screen.availWidth * 0.2;
                 windowX2 = window.screen.availWidth * 0.5;
             }
             else {
@@ -28,8 +28,8 @@ export default function Navbar() {
                 e = e || window.event;
                 const mouseX = e.pageX;
                 if (mouseX <= windowX) {
-                    if (window.screen.availWidth < 800) {
-                        navBar.style.width = "50%";
+                    if (window.screen.availWidth < 1200) {
+                        navBar.style.width = "70%";
                     }
                     else {
                         navBar.style.width = "15%";

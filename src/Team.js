@@ -5,7 +5,8 @@ export default function Team(props) {
   const Teamobj = props.Team;
   console.log(Teamobj);
   return (
-    <Container className="Section" id="Team">
+      <Container className="Section" id="Team">
+          <h2 className=" mb-4 pb-3 border-bottom">The Team</h2>
     <Table>
     <thead>
       <tr>
