@@ -12,7 +12,7 @@
 
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1025px) {
     .projText {
         font-size: 1.4vh;
     }
@@ -25,14 +25,17 @@
     .buttlink{
         font-size: 1.2vh;
     }
+    .projbox{
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
     .projText {
-        font-size: 2.3vh;
+        font-size: 3vh;
     }
     .projTitle {
-        font-size: 4vh !important;
+        font-size: 5vh !important;
     }
     .projbutt{
 
@@ -42,6 +45,9 @@
     }
     .buttlink {
         font-size: 2vh;
+    }
+    .projbox{
+        max-width: 75%;
     }
 
 }

@@ -13,9 +13,10 @@ export default function Project() {
         {
             Projects.map(
                 project => {
-                    return (<div className="Section" id={project.Title} key={project.id}>
-                        <Container>
-                        <Card bg="Dark">
+                return (<div className="Section" id={project.Title} key={project.id} >
+                  <div className="projbox mx-auto">
+                  <Container fluid>
+                    <Card bg="Dark">
                             <Card.Img className="projimg" src={project.Images} alt="projectimg"  />
                             <Card.ImgOverlay className="overlay">
                                 <Card.Body>
@@ -40,7 +41,8 @@ export default function Project() {
                             </Card.ImgOverlay>
                             </Card>
                         </Container>
-                    </div>
+                  </div>
+                </div>
                 )
             })
         }

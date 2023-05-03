@@ -5,8 +5,6 @@
 
 .Content {
     display: inline-grid;
-    grid-template: 70%;
-    min-width: 70%;
     position: center;
     background-color: white;
 }
@@ -16,19 +14,23 @@ p {
 }
 
 /* If the screen size is 1200px wide or more, set the font-size to 80px */
-@media (min-width: 1440px) {
+@media (min-width: 901px) {
     .Content {
         font-size: 2vw;
         font-size: 2vh;
         margin-left: 15%;
         margin-right: 15%;
     }
+
 }
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
-@media (max-width: 1439px) {
+@media (max-width: 900px) {
     .Content {
         font-size: 2.3vw;
         font-size: 1.2vh
+    }
+    .Section{
+
     }
 }
 h1{

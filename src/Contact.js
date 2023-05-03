@@ -32,8 +32,8 @@ export default function Contact() {
                     },
                 ],
             };
-        try {
-            fetch(process.env.Discord_Hook, {
+      try {
+        fetch(process.env.REACT_APP_DISCORD_HOOK, {
                 body: JSON.stringify(discordMessage),
                 method: 'post',
                 headers: {

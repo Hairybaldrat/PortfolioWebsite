@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\src"
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\CSS",
+    "\\src\\pages\\JSON"
   ],
+  "SelectedNode": "\\src\\pages\\Judge.js",
   "PreviewInSolutionExplorer": false
 }
