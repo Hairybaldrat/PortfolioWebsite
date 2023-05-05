@@ -34,8 +34,8 @@ export default function Project() {
                                         </Col>
                                                 </Row>
                                                 <Row className="mt-auto">
-                                        <Col>
-                                            <Button className="projbutt mr-5 sm" variant="light"><Link to={project.Url} className="buttlink">View More</Link></Button>
+                                                    <Col>
+                                                        <Button className="projbutt mr-5 sm" variant="light" stretch><Link to={project.Url} className="buttlink">View More</Link></Button>
                                         </Col>
                                     </Row>
                             </Card.Body>

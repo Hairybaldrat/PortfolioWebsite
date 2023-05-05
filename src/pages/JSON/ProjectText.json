@@ -11,17 +11,17 @@
       },
       {
         "id": "2",
-        "Name": "Ronan",
+        "Name": "Ronan Ferguson",
         "Role": "Team Lead"
       },
       {
         "id": "3",
-        "Name": "Daniel",
+        "Name": "Daniel Suh",
         "Role": "Frontend developer"
       },
       {
         "id": "4",
-        "Name": "Scott",
+        "Name": "Scott Perkins",
         "Role": "Mobile developer"
       }
 
@@ -61,7 +61,7 @@
       },
       {
         "id": "2",
-        "Name": "Daniel",
+        "Name": "Daniel Suh",
         "Role": "Programmer"
       },
       {
