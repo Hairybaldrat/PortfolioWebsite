@@ -3,37 +3,52 @@
     height: 100%;
 }
 
-.gittextbox{
+@media (min-width: 901px) {
+    .gittextbox {
+        font-size: 2rem;
+    }
+
+        .gittextbox > h2 {
+            font-size: 3rem;
+        }
 }
-.gittextbox > p{
-    color: black;
-    text-align: left;
-    text-decoration: none;
-}
-.gittextbox > h2 {
-    color: black;
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 900px) {
+    .gittextbox{
+        font-size: 0.8rem;
+    }
 }
 
-.gittextbox :link{
-    text-decoration: none;
-    color: black;
-}
+    .gittextbox > p {
+        color: black;
+        text-align: left;
+        text-decoration: none;
+    }
 
-.gittextbox :visited {
-    text-decoration: none;
-    color: black;
-}
+    .gittextbox > h2 {
+        color: black;
+    }
 
-.gittextbox :hover {
-    text-decoration: none;
-    color: black;
-}
+    .gittextbox :link {
+        text-decoration: none;
+        color: black;
+    }
 
-.gittextbox :active {
-    text-decoration: none;
-    color: black !important;
-}
+    .gittextbox :visited {
+        text-decoration: none;
+        color: black;
+    }
 
-.gitbox{
-    text-align: left;
-}
+    .gittextbox :hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    .gittextbox :active {
+        text-decoration: none;
+        color: black !important;
+    }
+
+    .gitbox {
+        text-align: left;
+    }
