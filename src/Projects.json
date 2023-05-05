@@ -18,7 +18,7 @@
   {
     "id": 4,
     "Name": "Judge",
-    "Images": "mugan.png",
+    "Images": "Judge.png",
     "Url": "Judge",
     "Text": "This is a final project that is being made to automatically test students code against test cases for labs to mark them. This project is a full stack application that uses sandboxing ideas to run code in a safe environment.",
     "Title": "Judge Application"

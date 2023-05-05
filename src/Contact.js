@@ -39,7 +39,8 @@ export default function Contact() {
                 headers: {
                     'Content-Type': 'application/json'
                 }
-            })
+        })
+          window.alert("Message sent! Thank you.")
         }
         catch(e) {
             alert(e);
