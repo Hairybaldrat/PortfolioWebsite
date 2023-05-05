@@ -27,8 +27,8 @@ p {
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
 @media (max-width: 900px) {
     .Content {
-
-
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .Section{
 
