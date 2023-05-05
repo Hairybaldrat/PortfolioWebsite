@@ -1,23 +1,24 @@
-import React from 'react'
-import './Profile.css'
-import Image from 'react-bootstrap/Image'
+import React from 'react';
+import './Profile.css';
+import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { TypeAnimation } from 'react-type-animation';
 
+
 export default function Profile() {
     return (
         <div className="Section" id="About me">
         <div className="Profilebox">
-          <Container fluid>
-            <Row >
-                        <Col xs={2}>
+                <Container fluid>
+                    <Row >
+                        <Col xs={2} xxl={2} md={2 }>
                             <div className="Profilepicture mb-3" >
-                                <Image src="Portfolio.png" alt="Rowan Olive" className="picture" fluid />
+                                <Image src="Portfolio.png" alt="Rowan Olive" className="picture" fluid/>
                 </div>
-              </Col>
-                        <Col xxl={8 }>
+                        </Col>
+                        <Col xxl={8} className="textcol">
                 <h1 className="Title" id="Title">About me</h1>
                 <p className="profiletext">My name is Rowan and I am a junior software developer.
                   I mainly have experience in C#, Javascript (React).

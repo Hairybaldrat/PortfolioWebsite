@@ -62,11 +62,9 @@ export default function Contact() {
                             id="inputName"
                             aria-describedby="nameHelp"
                             placeholder="Your Name"
-                            onChange={(e) => setName(e.target.value)}
+                                onChange={(e) => setName(e.target.value)}
+                                maxLength={200}
               />
-              <Form.Text id="nameHelp" muted>
-                Insert your name here.
-              </Form.Text>
             </Form.Group>
           </Row>
                     <Row>
@@ -77,28 +75,24 @@ export default function Contact() {
                 id="inputEmail"
                 aria-describedby="emailHelp"
                 placeholder="name@example.com"
-                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => setEmail(e.target.value)}
+                                maxLength={200}
               />
-              <Form.Text id="emailHelp" muted>
-                Insert your email here.
-              </Form.Text>
             </Form.Group>
           </Row>
           <Row>
             <Form.Group className="mb-3">
               <Form.Label htmlFor="inputMessage" >Message :</Form.Label>
               <Form.Control
-                type="text"
-                id="inputMessage"
-                aria-describedby="messageHelp"
-                as="textarea"
+                                type="text"
+                                id="inputMessage"
+                                aria-describedby="messageHelp"
+                                as="textarea"
                                 rows={4}
-                            placeholder="Your Message"
-                            onChange={(e) => setMessage(e.target.value)}
+                                placeholder="Your Message"
+                                onChange={(e) => setMessage(e.target.value)}
+                                maxLength={200 }
               />
-              <Form.Text id="messageHelp" muted>
-                Insert the message you want to send.
-              </Form.Text>
             </Form.Group>
           </Row>
           <Row>

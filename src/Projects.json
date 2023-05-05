@@ -4,7 +4,7 @@
     "Name": "Attendance application",
     "Images": "attendance.png" ,
     "Url": "Attendance",
-    "Text": "A full stack cloud based application that allows students to log in with qr codes. Has multiple parts, including a mobile layer, web layer, and a database layer. This application was designed for a software development course. \n ",
+    "Text": "A full stack cloud-based application that allows students to log in with QR codes. Has multiple parts, including a mobile layer, a web layer, and a database layer. This application was designed for a software development course. \n ",
     "Title": "Attendance Application"
   },
   {
@@ -12,15 +12,15 @@
     "Name": "Mugan Trial",
     "Images": "mugan0.png",
     "Url": "Mugan-Trial",
-    "Text": "Mugan Trial is a game about surviving procedually generated dungeons to try and fight your way to the surface. This game was made for a second year game development course.",
+    "Text": "Mugan Trial is a game about surviving procedurally generated dungeons to try and fight your way to the surface. This game was made for a second-year game development course.",
     "Title": "Mugan Trial"
   },
   {
     "id": 4,
-    "Name": "Judge",
+    "Name": "Judge Application",
     "Images": "Judge.png",
     "Url": "Judge",
-    "Text": "This is a final project that is being made to automatically test students code against test cases for labs to mark them. This project is a full stack application that uses sandboxing ideas to run code in a safe environment.",
+    "Text": "This is a final project that is being made to automatically test student's code against test cases for labs to mark them. This project is a full-stack application that uses sandboxing ideas to run code in a safe environment.",
     "Title": "Judge Application"
   }
 ]

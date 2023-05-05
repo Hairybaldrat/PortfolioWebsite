@@ -19,7 +19,7 @@ export default function Github() {
                         <Col>
                             <div className="gittextbox">
                                 <h2 className="pb-2 border-bottom mb-3">My github</h2>
-                                <p className="mb-5">Check out my github to download some of my open source projects, or follow me to see what public repos I am working on.</p>
+                            <p className="mb-5">Check out my GitHub to download some of my open-source projects, or follow me to see what public repos I'm working on.</p>
                             <a href="https://github.com/Hairybaldrat"><Button variant="dark" > Click me!</Button></a>
                             </div>
                         </Col>

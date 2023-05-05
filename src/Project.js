@@ -15,7 +15,7 @@ export default function Project() {
                 (project) => {
                     return (
                         <div className="Section reveal" id={project.Title} key={project.id}>
-                  <div className="projbox mx-auto">
+                  <Container className="projbox mx-auto" fluid>
                         <Container fluid>
                             <Card bg="Dark" className='gg'>
                             <Card.Img className="projimg" src={project.Images} alt="projectimg"  />
@@ -26,9 +26,9 @@ export default function Project() {
                                             {project.Name}
                                         </Card.Title>
                                     </Row>
-                                    <Row className="justify-content-md-center">
-                                        <Col xs lg="10">
-                                            <Card.Text className="projText" >
+                                    <Row className="justify-content-md-center ">
+                                                    <Col lg="10">
+                                            <Card.Text className="projText " >
                                                 {project.Text}
                                             </Card.Text>
                                         </Col>
@@ -42,7 +42,7 @@ export default function Project() {
                             </Card.ImgOverlay>
                             </Card>
                         </Container>
-                  </div>
+                  </Container>
                 </div>
                 )
             })

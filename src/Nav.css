@@ -55,7 +55,7 @@
 }
 .hoverbox {
     position: fixed;
-    width: 10%;
+    width: 14%;
     height: 100%;
     z-index: 2;
 }
@@ -97,7 +97,7 @@
 .hoverbutt{
 
     float:left;
-    
+
 }
 
 @media (min-width: 1440px) {
