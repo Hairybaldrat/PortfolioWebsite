@@ -11,18 +11,18 @@ export default function Gallery(props) {
                 <h2 className="mb-4 pb-2 border-bottom">Gallery</h2>
                 <Row className="mb-1">
                     <Col sm>
-                        <Image className="galleryImg" src={props.images[0]} thumbnail />
+                        <Image className="galleryImg reveal" src={props.images[0]} thumbnail />
                     </Col>
                     <Col sm>
-                        <Image className="galleryImg" src={props.images[1]} thumbnail />
+                        <Image className="galleryImg reveal" src={props.images[1]} thumbnail />
                     </Col>
                 </Row>
                 <Row >
                     <Col sm>
-                        <Image className="galleryImg" src={props.images[2]} thumbnail />
+                        <Image className="galleryImg reveal" src={props.images[2]} thumbnail />
                     </Col>
                     <Col sm>
-                        <Image className="galleryImg" src={props.images[3]} thumbnail />
+                        <Image className="galleryImg reveal" src={props.images[3]} thumbnail />
                     </Col>
                 </Row >
             </Container>

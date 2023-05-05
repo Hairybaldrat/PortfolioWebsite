@@ -1,13 +1,30 @@
 {
   "Attendance": {
-    "Introduction": "Chunga",
+    "Introduction": "This application was designed so students would be able to log attendance through their phones with a QR code. It is a multi tiered application, with a mobile layer, a web layer a backend layer.",
     "Body": "Chungus",
-    "Images": [ "Chungus", "Chungus" ],
+    "Images": [ "attendance.png", "Chungus" ],
     "Team": [
       {
         "id": "1",
-          "Name": "Rowan Olive"
+        "Name": "Rowan Olive",
+        "Role": "Backend developer"
+      },
+      {
+        "id": "2",
+        "Name": "Ronan",
+        "Role": "Team Lead"
+      },
+      {
+        "id": "3",
+        "Name": "Daniel",
+        "Role": "Frontend developer"
+      },
+      {
+        "id": "4",
+        "Name": "Scott",
+         "Role": "Mobile developer"
       }
+
     ]
   },
   "Mugan": {

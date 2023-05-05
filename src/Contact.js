@@ -46,7 +46,7 @@ export default function Contact() {
         }
     }
 
-    return (<div className="Section" id="Contact">
+    return (<div className="Section reveal" id="Contact">
         <div className="Contactbox">
             <Form onSubmit={handleSubmit}>
         <Container fluid>

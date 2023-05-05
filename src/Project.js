@@ -12,16 +12,17 @@ export default function Project() {
     return (<div className="Project">
         {
             Projects.map(
-                project => {
-                return (<div className="Section" id={project.Title} key={project.id} >
+                (project) => {
+                    return (
+                        <div className="Section reveal" id={project.Title} key={project.id}>
                   <div className="projbox mx-auto">
-                  <Container fluid>
-                    <Card bg="Dark">
+                        <Container fluid>
+                            <Card bg="Dark" className='gg'>
                             <Card.Img className="projimg" src={project.Images} alt="projectimg"  />
                             <Card.ImgOverlay className="overlay">
                                 <Card.Body>
                                     <Row>
-                                        <Card.Title className="projTitle">
+                                                    <Card.Title className="projTitle pb-2 border-bottom ">
                                             {project.Name}
                                         </Card.Title>
                                     </Row>
@@ -31,10 +32,10 @@ export default function Project() {
                                                 {project.Text}
                                             </Card.Text>
                                         </Col>
-                                    </Row>
-                                    <Row>
+                                                </Row>
+                                                <Row className="mt-auto">
                                         <Col>
-                                            <Button className="projbutt" variant="light"><Link to={project.Url} className="buttlink">View More</Link></Button>
+                                            <Button className="projbutt mr-5 sm" variant="light"><Link to={project.Url} className="buttlink">View More</Link></Button>
                                         </Col>
                                     </Row>
                             </Card.Body>

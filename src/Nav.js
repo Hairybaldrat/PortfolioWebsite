@@ -74,7 +74,7 @@ export default function Navbar() {
             </div>
             <div className="hoverbox">
                 <Button variant="dark" className="hoverbutt">
-                    <h2 className="hoverindic"> Explore</h2>
+                    <h2 className="hoverindic"> Navigation</h2>
                 </Button>
             </div>
         </div>);

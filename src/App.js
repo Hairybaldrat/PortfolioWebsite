@@ -5,6 +5,7 @@ import Attendance from './pages/Attendance.js'
 import Mugan from './pages/Mugan.js'
 import Judge from './pages/Judge.js'
 import Monkey from './pages/Monkey.js'
+import Reveal from './reveal.js'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
                     <Route path="/Mugan-Trial" element={<Mugan />} />
                     <Route path="/Monkey-Site" element={<Monkey />} />
                     <Route path="/Judge" element={<Judge />} />
-          </Routes>
+                </Routes>
+                <Reveal />
             </div>
         </BrowserRouter>
   );

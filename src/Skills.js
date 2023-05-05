@@ -37,13 +37,13 @@ export default function Skills() {
                 <Col className="skillColumn" sm>
                     <h2>Games Development</h2>
                     <p className="innertext">I have made multiple unity game projects over the course of my studies.
-                    Game development and creation is a hobby that has allowed me to not only work on my coding knowledge but also over general skills.
+                    Game development and creation is a hobby that has allowed me to not only work on my coding knowledge but also other general skills.
                     </p>
                 </Col>
                 <Col className="skillColumn" sm>
                     <h2>Databases</h2>
                     <p className="innertext">I have worked on multiple projects that have implemented databases.
-                    I have a proficient understanding of SQL and Jade 
+                    I have a proficient understanding of SQL and Jade.
                     </p>
                 </Col>
             </Row>

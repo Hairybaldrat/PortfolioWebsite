@@ -20,14 +20,15 @@
         font-size: 2.4vh !important;
     }
     .projimg {
-        height: 50vi;
+        height: 60vi;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     }
     .buttlink{
         font-size: 1.2vh;
     }
     .projbox {
         max-width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
     }
 }
 
@@ -43,12 +44,14 @@
     }
     .projimg {
         height: 25vi;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     }
     .buttlink {
         font-size: 2vh;
     }
-    .projbox{
+    .projbox {
         max-width: 75%;
+
     }
 
 }
@@ -92,7 +95,7 @@
     }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
 }
 
