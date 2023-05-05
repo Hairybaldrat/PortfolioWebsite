@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button"
 
 export default function Navbar() {
   const [sections, setSections] = useState([]);
-
     //Will currently freak out if resolution is changed in debug mode, seems to be fine if browser changes size.
     useEffect(() => {
         if (document.getElementsByClassName('Content')?.[0] != null) {
@@ -38,7 +37,9 @@ export default function Navbar() {
                 else if (mouseX >= windowX2) {
                     navBar.style.width = "0px";
                 }
+
             }
+
         } else {
             console.log("No content element.")
         }

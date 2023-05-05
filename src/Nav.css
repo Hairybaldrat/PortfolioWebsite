@@ -17,7 +17,7 @@
 }
 
 .butttext{
-    font-size: 2vh;
+    font-size: 2rem;
 }
 
 .redirbutt:not(:disabled):hover {
@@ -51,7 +51,7 @@
     opacity: 0.90;
     color: white;
     user-select: none;
-    font-size: 2vh;
+    font-size: 2rem;
 }
 .hoverbox {
     position: fixed;
