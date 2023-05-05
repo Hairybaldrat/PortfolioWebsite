@@ -52,7 +52,7 @@
   "Judge": {
     "Introduction": "This application had a very practical real-world application. It was made to replace an existing system that had many issues. It was designed in a way to be deployable and adjustable with the resources being deployed to cloud platforms. The application allows students to upload code directly. This code will be sent off to a sandboxed client that then runs the code against test cases. If it passes/fails then the client will pass back an automated grade to the student.",
     "Body": "Chungus",
-    "Images": [ "mugan.png", "mugan1.png", "Mugan2.png", "Mugan3.png" ],
+    "Images": [ "mugan.png", "mugan1.png", "mugan2.png", "mugan3.png" ],
     "Team": [
       {
         "id": "1",
