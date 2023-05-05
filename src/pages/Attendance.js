@@ -11,7 +11,6 @@ function Attendance() {
             <div className="Content">
                 <Introduction name="Attendance Application" text={attendance.Introduction} />
                 <Team Team={attendance.Team} />
-                <Body />
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 {
   "Attendance": {
-    "Introduction": "This application was designed so students would be able to log attendance through their phones with a QR code. It is a multi tiered application, with a mobile layer, a web layer a backend layer. The web layer handles most of the logic",
+    "Introduction": "This application was designed so students would be able to log attendance through their phones with a QR code. It is a multi tiered application, with a mobile layer, a web layer a backend layer. The web layer handles most of the logic. For this project I focused primarily on the backend but also aided with some of the front end code/design.",
     "Body": "Chungus",
     "Images": [ "attendance.png", "Chungus" ],
     "Team": [
@@ -29,7 +29,7 @@
   },
   "Mugan": {
     "Introduction": "Mugan trial is a game based around a rogue-lite experience. The player has to traverse procedually generated rooms that vary between each level of the dungeon. As the player progresses they will become stronger allowing them to progress quicker and fight tougher enemies.",
-    "Body": "Chungus",
+    "Body": "Mugan was a great game to experiment and use learned coding practices to create a enjoyable video game. From learning how to procedually generate areas, to also being able to diagnose and fix bugs I learnt a lot on this project. This project primarily taught me about game design but also aided in reinforcing coding fundamentals.",
     "Images": [ "mugan.png", "mugan1.png", "mugan2.png", "mugan3.png" ],
     "Team": [
       {
@@ -50,24 +50,24 @@
     ]
   },
   "Judge": {
-    "Introduction": "Mugan trial is a game based around a rogue-lite experience. The player has to traverse procedually generated rooms that vary between each level of the dungeon. As the player progresses they will become stronger allowing them to progress quicker and fight tougher enemies.",
+    "Introduction": "This application had a very practical real world application. It was made to replace an existing system that had many issues. It was designed in a way to be redpolyable and adjustable with the resources being deployed to cloud platforms. The application allows students to upload code directly. This code will be sent off to a sandboxed client that then runs the code against test cases. If it passes/fails then the client will pass back a automated grade to student.",
     "Body": "Chungus",
     "Images": [ "mugan.png", "mugan1.png", "mugan2.png", "mugan3.png" ],
     "Team": [
       {
         "id": "1",
         "Name": "Rowan Olive",
-        "Role": "Programmer/Art"
+        "Role": "Programmer/Cloud designer"
       },
       {
         "id": "2",
-        "Name": "Cody Couper",
-        "Role": "Team Lead"
+        "Name": "Daniel",
+        "Role": "Programmer"
       },
       {
         "id": "3",
-        "Name": "Kevin Young",
-        "Role": "Music designer"
+        "Name": "Brayden Michie",
+        "Role": "Team Lead"
       }
     ]
   }
