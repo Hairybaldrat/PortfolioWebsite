@@ -8,7 +8,7 @@ import "./CSS/Home.css"
 
 function Home() {
     return (
-        <div>
+        <div className="toplevel">
             <Navbar />
           <div className="Content">
               <Profile />

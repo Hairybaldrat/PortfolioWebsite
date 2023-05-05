@@ -1,6 +1,6 @@
 {
   "Attendance": {
-    "Introduction": "This application was designed so students would be able to log attendance through their phones with a QR code. It is a multi tiered application, with a mobile layer, a web layer a backend layer.",
+    "Introduction": "This application was designed so students would be able to log attendance through their phones with a QR code. It is a multi tiered application, with a mobile layer, a web layer a backend layer. The web layer handles most of the logic",
     "Body": "Chungus",
     "Images": [ "attendance.png", "Chungus" ],
     "Team": [
@@ -50,9 +50,25 @@
     ]
   },
   "Judge": {
-
-  },
-  "Monkey": {
-
+    "Introduction": "Mugan trial is a game based around a rogue-lite experience. The player has to traverse procedually generated rooms that vary between each level of the dungeon. As the player progresses they will become stronger allowing them to progress quicker and fight tougher enemies.",
+    "Body": "Chungus",
+    "Images": [ "mugan.png", "mugan1.png", "mugan2.png", "mugan3.png" ],
+    "Team": [
+      {
+        "id": "1",
+        "Name": "Rowan Olive",
+        "Role": "Programmer/Art"
+      },
+      {
+        "id": "2",
+        "Name": "Cody Couper",
+        "Role": "Team Lead"
+      },
+      {
+        "id": "3",
+        "Name": "Kevin Young",
+        "Role": "Music designer"
+      }
+    ]
   }
 }

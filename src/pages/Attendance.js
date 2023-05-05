@@ -6,7 +6,7 @@ import Team from "../Team.js"
 function Attendance() {
     const attendance = Project.Attendance;
     return (
-        <div>
+        <div className="toplevel">
             <Navbar />
             <div className="Content">
                 <Introduction name="Attendance Application" text={attendance.Introduction} />
