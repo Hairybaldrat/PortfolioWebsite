@@ -32,7 +32,7 @@ export default function Profile() {
                                     2000, 
                                     'I am a fullstack web developer',
                                     2000,
-                                    'I am a games developer',
+                                    'I am a game developer',
                                     2000,
                                     'I am a database developer',
                                     2000,

@@ -12,7 +12,7 @@
 
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 899px) {
     .projText {
         font-size: 1.4vh;
     }
@@ -32,7 +32,7 @@
     }
 }
 
-@media (min-width: 1499px) {
+@media (min-width: 900px) {
     .projText {
         font-size: 2vh;
     }
@@ -43,7 +43,7 @@
 
     }
     .projimg {
-        height: 30vi;
+        height: 700px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     }
     .buttlink {

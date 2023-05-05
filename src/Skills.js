@@ -35,7 +35,7 @@ export default function Skills() {
                     <p className="innertext">I understand full-stack web development. I mainly have experience with React JS with ASP.net backend.</p>
                 </Col>
                 <Col className="skillColumn" sm>
-                    <h2>Games Development</h2>
+                    <h2>Game Development</h2>
                     <p className="innertext">I have made multiple Unity game projects over the course of my studies.
                     Game development and creation is a hobby that has allowed me to not only work on my coding knowledge.
                     </p>
