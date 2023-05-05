@@ -9,11 +9,10 @@
 }
 
 .skillColumn > h2 {
-    font-size: 0.9vi;
-    font-size: 2vh;
+    font-size: 2rem;
 }
 
 .skillsheader{
-    font-size: 4vh !important;
+    font-size: 4rem !important;
     margin-bottom: 4%;
 }

@@ -26,8 +26,8 @@ export default function Project() {
                                             {project.Name}
                                         </Card.Title>
                                     </Row>
-                                    <Row className="justify-content-md-center ">
-                                                    <Col lg="10">
+                                    <Row className="justify-content-md-center mb-3 ">
+                                                    <Col lg="10" >
                                             <Card.Text className="projText " >
                                                 {project.Text}
                                             </Card.Text>

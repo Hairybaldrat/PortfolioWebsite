@@ -18,8 +18,6 @@ p {
 /* If the screen size is 1200px wide or more, set the font-size to 80px */
 @media (min-width: 901px) {
     .Content {
-        font-size: 2vw;
-        font-size: 2vh;
         margin-left: 15%;
         margin-right: 15%;
         min-width: 70%;
@@ -29,8 +27,7 @@ p {
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
 @media (max-width: 900px) {
     .Content {
-        font-size: 2.3vw;
-        font-size: 1.2vh;
+
 
     }
     .Section{
