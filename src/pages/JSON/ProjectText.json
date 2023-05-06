@@ -29,8 +29,8 @@
   },
   "Mugan": {
     "Introduction": "Mugan Trial is a game based on a rogue-lite experience. The player has to traverse procedurally generated rooms that vary between each level of the dungeon. As the player progresses they will become stronger allowing them to progress quicker and fight tougher enemies.",
-    "Body": "Mugan was a great game to experiment and use learned coding practices to create an enjoyable video game. it also served as a learning experience with learning how to procedually generate areas, to also being able to diagnose and fix bugs I learnt a lot on this project. This project primarily taught me about game design but also aided in reinforcing coding fundamentals.",
-    "Images": [ "mugan.png", "mugan1.png", "mugan2.png", "mugan3.png" ],
+    "Body": "Mugan was a great game to experiment and use learned coding practices to create an enjoyable video game. It also served as a learning experience with learning how to procedually generate areas, to also being able to diagnose and fix bugs I learnt a lot on this project. This project primarily taught me about game design but also aided in reinforcing coding fundamentals.",
+    "Images": [ "mugan.png", "mugan1.png", "Mugan2.png", "Mugan3.png" ],
     "Team": [
       {
         "id": "1",
