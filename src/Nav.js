@@ -12,37 +12,36 @@ export default function Navbar() {
             const sectionElements = document.getElementsByClassName('Content')[0].getElementsByClassName('Section');
             const sectionArray = Array.from(sectionElements);
             setSections(sectionArray);
-            window.addEventListener('resize', handleResize)
+            window.addEventListener('resize', handleResize);
+            document.addEventListener('mousemove', mouseMoveHandler);
+            const navBar = document.getElementsByClassName("Navbarbox")[0];
+            var windowX;
+            var windowX2;
+            const widths = setWindowX();
+            windowX = widths[0];
+            windowX2 = widths[1];
+            console.log(windowX);
+            console.log(windowX2)
             function handleResize() {
-                var windowX;
-                var windowX2;
-                if (window.screen.availWidth < 1200) {
-                    windowX = window.innerWidth * 0.2;
-                    windowX2 = window.innerWidth * 0.5;
-                }
-                else {
-                    windowX = window.innerWidth * 0.10;
-                    windowX2 = window.innerWidth * 0.20;
-                }
-                function mouseMoveHandler(e) {
-                    e = e || window.event;
-                    const mouseX = e.pageX;
-                    if (mouseX <= windowX) {
-                        if (window.innerWidth < 800) {
-                            navBar.style.width = "70%";
-                        }
-                        else {
-                            navBar.style.width = "15%";
-                        }
-                    }
-                    else if (mouseX >= windowX2) {
-                        navBar.style.width = "0px";
-                    }
+                const widths = setWindowX();
+                windowX = widths[0];
+                windowX2 = widths[1];
 
             }
-
-            const navBar = document.getElementsByClassName("Navbarbox")[0];
-            document.addEventListener('mousemove', mouseMoveHandler);
+            function mouseMoveHandler(e) {
+                e = e || window.event;
+                const mouseX = e.pageX;
+                if (mouseX <= windowX) {
+                    if (window.innerWidth < 800) {
+                        navBar.style.width = "70%";
+                    }
+                    else {
+                        navBar.style.width = "15%";
+                    }
+                }
+                else if (mouseX >= windowX2) {
+                    navBar.style.width = "0px";
+                }
 
             }
 
@@ -51,6 +50,20 @@ export default function Navbar() {
         }
 
     }, []);
+
+    function setWindowX() {
+        var windowX;
+        var windowX2;
+        if (window.screen.availWidth < 1200) {
+            windowX = window.innerWidth * 0.2;
+            windowX2 = window.innerWidth * 0.5;
+        }
+        else {
+            windowX = window.innerWidth * 0.10;
+            windowX2 = window.innerWidth * 0.20;
+        }
+        return [windowX, windowX2]
+    }
 
     function clickbutton(section) {
         section.scrollIntoView();
