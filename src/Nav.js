@@ -6,37 +6,43 @@ import Button from "react-bootstrap/Button"
 export default function Navbar() {
   const [sections, setSections] = useState([]);
     //Will currently freak out if resolution is changed in debug mode, seems to be fine if browser changes size.
+
     useEffect(() => {
         if (document.getElementsByClassName('Content')?.[0] != null) {
             const sectionElements = document.getElementsByClassName('Content')[0].getElementsByClassName('Section');
             const sectionArray = Array.from(sectionElements);
             setSections(sectionArray);
+            window.addEventListener('resize', handleResize)
+            function handleResize() {
+                var windowX;
+                var windowX2;
+                if (window.screen.availWidth < 800) {
+                    windowX = window.innerWidth * 0.2;
+                    windowX2 = window.innerWidth * 0.5;
+                }
+                else {
+                    windowX = window.innerWidth * 0.10;
+                    windowX2 = window.innerWidth * 0.20;
+                }
+                function mouseMoveHandler(e) {
+                    e = e || window.event;
+                    const mouseX = e.pageX;
+                    if (mouseX <= windowX) {
+                        if (window.innerWidth < 1200) {
+                            navBar.style.width = "70%";
+                        }
+                        else {
+                            navBar.style.width = "15%";
+                        }
+                    }
+                    else if (mouseX >= windowX2) {
+                        navBar.style.width = "0px";
+                    }
+
+            }
+
             const navBar = document.getElementsByClassName("Navbarbox")[0];
             document.addEventListener('mousemove', mouseMoveHandler);
-            var windowX;
-            var windowX2;
-            if (window.screen.availWidth < 800) {
-                windowX = window.screen.availWidth * 0.2;
-                windowX2 = window.screen.availWidth * 0.5;
-            }
-            else {
-                windowX = window.screen.availWidth * 0.10;
-                windowX2 = window.screen.availWidth * 0.20;
-            }
-            function mouseMoveHandler(e) {
-                e = e || window.event;
-                const mouseX = e.pageX;
-                if (mouseX <= windowX) {
-                    if (window.screen.availWidth < 1200) {
-                        navBar.style.width = "70%";
-                    }
-                    else {
-                        navBar.style.width = "15%";
-                    }
-                }
-                else if (mouseX >= windowX2) {
-                    navBar.style.width = "0px";
-                }
 
             }
 

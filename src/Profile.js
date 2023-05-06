@@ -37,7 +37,7 @@ export default function Profile() {
                                     'I am a database developer',
                                     2000,
                                     () => {
-                                        console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+                                        
                                     }
                                 ]}
                                 wrapper="span"
