@@ -59,14 +59,16 @@ export default function Navbar() {
     function setWindowX() {
         var windowX;
         var windowX2;
-        if (window.screen.availWidth < 1200) {
+        if (window.innerWidth < 1200) {
             windowX = window.innerWidth * 0.2;
-            windowX2 = window.innerWidth * 0.5;
+            windowX2 = window.innerWidth * 0.65;
         }
         else {
             windowX = window.innerWidth * 0.10;
             windowX2 = window.innerWidth * 0.20;
         }
+        console.log(windowX)
+        console.log(windowX2)
         return [windowX, windowX2]
     }
 
