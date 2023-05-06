@@ -32,17 +32,11 @@ export default function Navbar() {
                 e = e || window.event;
                 const mouseX = e.pageX;
                 if (mouseX <= windowX) {
-                    if (window.innerWidth < 800) {
-                        navBar.style.width = "70%";
-                    }
-                    else {
-                        navBar.style.width = "15%";
-                    }
+                    openNav();
                 }
                 else if (mouseX >= windowX2) {
                     navBar.style.width = "0px";
                 }
-
             }
 
         } else {
@@ -50,6 +44,17 @@ export default function Navbar() {
         }
 
     }, []);
+
+    function openNav() {
+        const navBar = document.getElementsByClassName("Navbarbox")[0];
+        if (window.innerWidth < 800) {
+            navBar.style.width = "70%";
+        }
+        else {
+            navBar.style.width = "15%";
+        }
+    }
+
 
     function setWindowX() {
         var windowX;
@@ -64,6 +69,7 @@ export default function Navbar() {
         }
         return [windowX, windowX2]
     }
+
 
     function clickbutton(section) {
         section.scrollIntoView();
@@ -94,7 +100,7 @@ export default function Navbar() {
             </div>
             <div className="hoverbox" >
                 <Button variant="dark" className="hoverbutt" >
-                    <h2 className="hoverindic" > Navigation</h2>
+                    <h2 className="hoverindic" onClick={()=> openNav()}> Navigation</h2>
                 </Button>
             </div>
         </div>);

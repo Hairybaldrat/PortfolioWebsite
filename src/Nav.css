@@ -16,9 +16,6 @@
     height: auto;
 }
 
-.butttext{
-    font-size: 1rem;
-}
 
 .redirbutt:not(:disabled):hover {
     outline: 0;
@@ -55,8 +52,7 @@
 }
 .hoverbox {
     position: fixed;
-    width: 14%;
-    height: 100%;
+    height: auto;
     z-index: 2;
 }
 
@@ -105,10 +101,32 @@
         width: 70%;
         border-radius: 0% !important;
     }
+    .hoverbox{
+        width: 15%;
+    }
+    .butttext {
+        font-size: 1.2rem;
+    }
+
+    .hoverindic {
+        font-size: 1.6rem;
+    }
 }
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
 @media (max-width: 1439px) {
     .hoverbutt {
-    
+
+    }
+
+    .hoverindic{
+        font-size: 0.8rem;
+    }
+
+    .hoverbox{
+        width: 10%;
+    }
+
+    .butttext {
+        font-size: 0.8rem;
     }
 }
